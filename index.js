@@ -1,3 +1,4 @@
+//Created Backend server
 const express = require('express')
 const dotenv = require('dotenv')
 const { MongoClient, ServerApiVersion } = require('mongodb');
@@ -33,7 +34,6 @@ run().catch(console.dir);
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
-
 app.listen(port, () => {
   console.log(`Running on port ${port}`)
 })
